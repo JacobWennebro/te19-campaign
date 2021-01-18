@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <link href="style/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="d-flex">
+
+    <header>
+        <div class="marginal header-dv">
+            <div>
+                <svg class="al-v-center" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+            </div>
+            <div>
+                <h1 id="title" class="al-v-center">Fuck Corona</h1>
+            </div>
+            <div>
+                <img id="countryFlag" src="https://www.countryflags.io/us/flat/64.png"/>
+                <!--
+                <div class="vw-desktop h-100">
+                    <nav class="desktop-nav">
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/about-us.html">About us</a></li>
+                            <li><a onclick="toggleDarkmode()">Dark mode</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                -->
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="intro">
+            <div class="marginal">
+                <h2 id="introText">“The number one COVID-19 news outlet.”</h2>
+    
+                <button>Learn more</button>
+
+                <div class="intro-article">
+                    <span>Latest Article</span>
+                    <h3>Lorem Ipsum</h3>
+                    <div class="intro-thumbnail"></div>
+                </div>
+
+            </div>
+        </section>
+        <section id="light">
+            <div class="marginal">
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="marginal">
+            <p>2020 &copy; Jacob Wennebro</p>
+        </div>
+    </footer>
+
+    <script>
+        if (localStorage.getItem("darktheme") === "true") document.body.classList.add("dark");
+
+        const toggleDarkmode = () => {
+            const body = document.body;
+            if (body.classList.contains("dark")) {
+                body.classList.remove("dark");
+                localStorage.setItem("darktheme", "false");
+            } else {
+                body.classList.add("dark");
+                localStorage.setItem("darktheme", "true");
+            }
+        }
+    </script>
+</body>
+
+</html>
