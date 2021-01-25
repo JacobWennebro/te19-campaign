@@ -18,4 +18,11 @@
     header .dv-50 {
         display: block !important;
     }
+
+}
+
+@media only screen and (min-device-width : 600px) {
+    section#intro {
+        height: auto !important;
+    }
 }
