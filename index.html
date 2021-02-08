@@ -42,7 +42,7 @@
     
                 <button>Learn more</button>
 
-                <div class="intro-article">
+                <div class="intro-article card">
                     <span>Latest Article</span>
                     <h3>Lorem Ipsum</h3>
                     <div class="intro-thumbnail"></div>
@@ -57,6 +57,16 @@
                         <h2>Have to get tested?</h2>
                         <p>We help you find a location near you</p>
                     </div>
+
+                    <div id="bdTestingLookup">
+                        <div class="marginal card">
+                            <p class="card-title">testing center lookup</p>
+                            <div class="input-divider">
+                                <input placeholder="State, residency, address ...">
+                                <button>Search</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -68,20 +78,6 @@
         </div>
     </footer>
 
-    <script>
-        if (localStorage.getItem("darktheme") === "true") document.body.classList.add("dark");
-
-        const toggleDarkmode = () => {
-            const body = document.body;
-            if (body.classList.contains("dark")) {
-                body.classList.remove("dark");
-                localStorage.setItem("darktheme", "false");
-            } else {
-                body.classList.add("dark");
-                localStorage.setItem("darktheme", "true");
-            }
-        }
-    </script>
 </body>
 
 </html>
