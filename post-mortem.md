@@ -28,6 +28,17 @@ Upplägget av uppgiften i allmänhet tycker jag fungerade bra. Det var hjälpsam
 
 Sidan känns väldigt oavslutad, den är inte speciellt responsiv från mobile till desktop och det finns heller inga undersidor eller en meny funktion. Det känns som jag kunde ha varit flitigare med min tid, dock så gick mycket tid åt research på just detta projekt så åtminstone har jag lärt mig något.
 
+## Validering & tester
+
+### CSS Validering
+All CSS är validerad och utmärkt med hjälp utav [W3's CSS Validator](https://jigsaw.w3.org/css-validator/). Till en början hade validatorn problem med att jag använde "max/min-device-width" för mina media queries vilket nämligen var deprecated. Men med en lätt Googling fann jag de moderna alternativen och bytte ut dem för att få ett perfekt resultat ifrån validatorn.
+
+### Användbarhetstest
+Sidan är väldigt basic och håller sig till diverse design principer vilket för en sidas funktioner igenkännbara. Personen jag anlitat för att testa sidan hade inga problem med att förstå eller föreställa sig hur man navigerar på sidan.
+
+### Tillgänglighetstest
+Sidan har testats för tillgänglihet med Web Disability Simulator och är klart användbar och lätt att förstå för alla synnedsättningar som testats tack vare färgerna och konstrasterna som valts för sidan.
+
 ## Sammanfattning
 
 Jag tror definitivt sidan har potential, om jag hade haft mera tid och kanske lite intresse för ämnet så hade jag nog kommit längre än enbart en homepage. Men jag är ändå nöjd med min design och slutprodukt.
